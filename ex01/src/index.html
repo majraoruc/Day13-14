@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Gallery's page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="../scripts/index.js" type="text/javascript"></script>
+
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 
@@ -13,69 +13,69 @@
     <h1 class="page-title">Cards Gallery</h1>
     <div class="row">
         <div class="column">
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img1">
                 <img class="image-style" src="../images/img1.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image01.html" onclick="openModal(this)">
                     <h1 class="image-title">Marathon</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img5">
                 <img class="image-style" src="../images/img5.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image05.html" onclick="openModal(this)">
                     <h1 class="image-title">Weight Lifting</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img8">
                 <img class="image-style" src="../images/img8.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image08.html" onclick="openModal(this)">
                     <h1 class="image-title">Jogging</h1>
                 </div>
             </div>
         </div>
         <div class="column">
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img2">
                 <img class="image-style" src="../images/img2.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image02.html" onclick="openModal(this)">
                     <h1 class="image-title">Gymnastics</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img6">
                 <img class="image-style" src="../images/img6.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image06.html" onclick="openModal(this)">
                     <h1 class="image-title">Basketball</h1>
                 </div>
             </div>
         </div>
         <div class="column">
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img3">
                 <img class="image-style" src="../images/img3.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image03.html" onclick="openModal(this)">
                     <h1 class="image-title">Climbing</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img7">
                 <img class="image-style" src="../images/img7.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image07.html" onclick="openModal(this)">
                     <h1 class="image-title">Swimming</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img9">
                 <img class="image-style" src="../images/img9.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image09.html" onclick="openModal(this)">
                     <h1 class="image-title">Running</h1>
                 </div>
             </div>
         </div>
         <div class="column">
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img4">
                 <img class="image-style" src="../images/img4.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image04.html" onclick="openModal(this)">
                     <h1 class="image-title">Skiing</h1>
                 </div>
             </div>
-            <div class="card-wrapper">
+            <div class="card-wrapper" id="img10">
                 <img class="image-style" src="../images/img10.jpg">
-                <div class="overlay">
+                <div class="overlay" href="./image10.html" onclick="openModal(this)">
                     <div class="image-title">
                         <h1>Cycling</h1>
                     </div>
@@ -84,7 +84,16 @@
             </div>
         </div>
     </div>
-   
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+
+    <script src="../scripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>
