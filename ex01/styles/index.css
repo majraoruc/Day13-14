@@ -1,0 +1,52 @@
+.row {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+    /*  justify-items: center;
+    justify-content: space-around; */
+    /* flex-wrap: wrap; */
+}
+
+.column {
+    flex: 25%;
+    max-width: 200px;
+    padding: 0 10px;
+}
+
+.card-wrapper {
+    position:relative;
+    width: 200px;
+    height: auto;
+    padding: 2px 0;
+}
+
+.image-style {
+    width: inherit;
+    
+}
+
+.page-title {
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    margin: 10px 0;
+}
+.image-title{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+}
+.card-wrapper:hover .overlay {display: block;} .image-title{opacity: 1;}
